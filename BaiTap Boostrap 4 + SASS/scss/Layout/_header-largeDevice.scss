@@ -1,0 +1,174 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.header {
+  position: fixed;
+  z-index: 99;
+  width: 95%;
+  left: 2.5%;
+  background-color: #fff;
+
+  //*** Container
+  &__container-largeDevice {
+    padding: 6px 6.5%;
+    margin: 0 auto;
+  }
+  //*** Brand
+  &__brand {
+    // Brand-logo
+    &-logo {
+      background: transparent url("../img/bsr-sprite2x.png") no-repeat -200px 0;
+      width: 93px;
+      height: 35px;
+      background-size: 400px 200px;
+      display: inline-block;
+      padding: 0;
+      margin: 6px 0 0 0;
+    }
+    // Brand-copy
+    &-copy {
+      display: block;
+      margin-top: -5px;
+      color: $color-brand;
+      font-weight: bold;
+      font-size: $fs-1;
+      text-align: center;
+    }
+  }
+  //***End Brand//
+
+  //***List navbar
+  &__list {
+    width: 100%;
+    justify-content: space-between;
+    //** Nav-item for all LIST
+    .nav-item {
+      .nav-link {
+        font-weight: 500;
+        color: $color-unique;
+        padding: 10px 15px;
+        padding-top: 6px;
+        font-size: $fs-2 - 3px;
+      }
+    }
+
+    //**List Left
+    &-left {
+      & > li.nav-item.show {
+        & > .nav-link {
+          color: $color-black-0;
+        }
+      }
+
+      // *nav-item for list left
+      .nav-item {
+        .dropdown-menu {
+          position: fixed;
+          top: 80px;
+          left: 2.5%;
+          width: 95%;
+        }
+      }
+
+      // Vehicles-dropdown
+      #vehicles-dropdown {
+        border: unset;
+        padding-top: 0;
+
+        ul.nav-pills {
+          justify-content: center;
+          background-color: #fafafa;
+          border-bottom: 1px solid #ddd;
+
+          &::before {
+            position: absolute;
+            display: block;
+            content: "";
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 5;
+            height: 5px;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12) inset;
+          }
+          
+        }
+
+        .vehicles-nav {
+
+          .nav-link {
+            font-size: $fs-0;
+            padding: 25px 15px;
+            position: relative;
+
+            &::after {
+              position: absolute;
+              display: block;
+              content: "";
+              bottom: 0;
+              left: 0;
+              z-index: 5;
+              width: 0%;
+              height: 4px;
+              background-color: #2d96cd;
+              transition: all .3s;
+            }
+
+            &:hover{
+
+              &::after{
+                width: 100%;
+                background-color: #2d96cd;
+              }
+              
+            }
+
+           
+            
+          }
+          
+          .nav-link.active {
+            
+            color: $color-black-0;
+            background-color:unset;
+            &::after{
+              width: 100%;
+              background-color:#102b4e;
+            }
+
+            &:hover{
+              &::after{
+                background-color: #102b4e;
+              }
+            }
+          }
+
+
+        }
+      }
+    }
+    // **End List Left
+
+    //**List Right
+    &-right {
+      //* nav-item for list Right
+      .nav-item {
+        .nav-link {
+          display: flex;
+
+          font-size: $fs-0 - 1px;
+
+          &-iconListRight {
+            i {
+              color: $color-icon;
+              font-size: $fs-3 + 2px;
+            }
+          }
+        }
+      }
+    }
+    // **End List Right
+  }
+  //***End List navbar//
+}

@@ -1,0 +1,102 @@
+.carousel{
+    padding-top: 5.5%;
+    &__container{
+        position: relative;
+        width: 95%;
+        margin: 0 auto;
+    }
+    img{
+        min-height: 320px;
+        width: 100%;
+    }
+
+    // Carousel Indicators
+    .carousel-indicators{
+        li{
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+            margin: 1px 12px;
+            opacity: 1;
+            transition: transform .5s ease-out;
+            &.active{
+                margin-top: 10px;
+                background-color: transparent;
+                border: 1px solid #fff;
+                transform: scale(1.5,1.5);
+            }
+        }
+
+     
+    }
+
+    // Carousel Items
+    &-inner{
+        .carousel-item{
+            .carousel-caption{
+                cursor: pointer;
+                text-align: left;
+                top: 3%;
+                left: 7%;
+                &:hover{
+                    i{
+                        background-color: #fff;
+                        color: black;
+                    }
+                }
+                .caption-text{
+                    font-size: $fs-2 - 3px;
+                }
+                .caption-icon{
+                    i{
+                        cursor: pointer;
+                        font-size: $fs-2;
+                        font-weight: bold;
+                        padding: 2px 9px;
+                        border: 1px solid #fff;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    // Carousel Button
+        .carousel-icon{
+            position: absolute;
+            z-index: 1;
+            width: 55px;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            padding-bottom: 3px;
+            cursor: pointer;
+            background-color: rgba(85,85,85,0.8);
+            i{
+                color: $color-white-0;
+                font-size: $fs-6;
+            }
+            &:hover{
+                background-color: #fff;
+                border: 1px solid $color-unique;
+                i{
+                    color: $color-icon;
+                }
+                &.icon-left{
+                    border-left: 0;
+                }
+                &.icon-right{
+                    border-right: 0;
+                }
+            }
+          
+
+        }
+        
+        .icon-left{
+            left: 0;
+        }
+        .icon-right{
+            right: 0;
+        }
+}
