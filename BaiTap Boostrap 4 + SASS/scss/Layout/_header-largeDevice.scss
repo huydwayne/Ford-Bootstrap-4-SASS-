@@ -75,8 +75,9 @@
       #vehicles-dropdown {
         border: unset;
         padding-top: 0;
-
+        
         ul.nav-pills {
+         
           justify-content: center;
           background-color: #fafafa;
           border-bottom: 1px solid #ddd;
@@ -171,4 +172,5 @@
     // **End List Right
   }
   //***End List navbar//
+  
 }
