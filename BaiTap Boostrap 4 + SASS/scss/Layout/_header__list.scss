@@ -1,0 +1,64 @@
+.vehicle-list{
+    max-height: 518px;
+    overflow-y: auto;
+    padding: 0px 75px;
+    &.active{
+        display: flex;
+        
+    }
+
+    &__item{
+        > a {
+        width: 180px;
+        min-height: 245px; 
+        }
+
+        &-image{
+            > img {
+                width: 100%;
+            }
+        }
+
+        &-brand{
+            margin-top: .5rem;
+            text-align: center;
+            font-size: $fs-0 + 2px;
+            color: $color-text;
+        }
+
+        &-price{
+            text-align: center;
+            font-size: $fs-0;
+            color: #555;
+        }
+
+
+
+    }
+
+    &__container{
+        
+        .inner-container{
+            border-top: solid 1px #ddd;
+            max-height: 246px;
+            padding-right: 150px;
+            text-align: right;
+           
+        }
+
+        .container__link{
+            display: inline-block;
+            > a {
+                width: 270px;
+                text-align: center;
+                display:block;
+                margin: 10px 5px;
+                padding: 15px 20px;
+                background-color: #fff;
+                border: 1px solid $color-text;
+                color: $color-text;
+            }
+        }
+    }
+
+}

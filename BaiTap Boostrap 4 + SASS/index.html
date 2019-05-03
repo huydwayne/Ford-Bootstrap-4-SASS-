@@ -34,19 +34,20 @@
 
                     <!-- List Left -->
                     <ul class="header__list-left navbar-nav">
-                        <li class="nav-item" >
+                        <li class="nav-item">
                             <a href="#" class="nav-link" data-toggle="dropdown" id="btnDropDown">
                                 Vehicles
                             </a>
                             <!-- Dropdown menu -->
-                            <div class="dropdown-menu mega-dropdown-menu" id="vehicles-dropdown" >
+                            <div class="dropdown-menu mega-dropdown-menu" id="vehicles-dropdown">
                                 
                                 <ul class="nav nav-pills d-flex" role="tablist">
                                     <li class="nav-item vehicles-nav">
                                         <a class="nav-link active" data-toggle="pill" href="#cars">Cars</a>
                                     </li>
                                     <li class="nav-item vehicles-nav">
-                                        <a class="nav-link" data-toggle="pill" href="#suvs-crossovers">SUVs & Crossovers</a>
+                                        <a class="nav-link" data-toggle="pill" href="#suvs-crossovers">SUVs &
+                                            Crossovers</a>
                                     </li>
                                     <li class="nav-item vehicles-nav">
                                         <a class="nav-link" data-toggle="pill" href="#trucks-vans">Trucks & Vans</a>
@@ -55,23 +56,106 @@
                                         <a class="nav-link" data-toggle="pill" href="#hybrids-evs">Hybrids & EVs</a>
                                     </li>
                                     <li class="nav-item vehicles-nav">
-                                        <a class="nav-link" data-toggle="pill" href="#commercial-vehicles">Commercial Vehicles</a>
+                                        <a class="nav-link" data-toggle="pill" href="#commercial-vehicles">Commercial
+                                            Vehicles</a>
                                     </li>
                                     <li class="nav-item vehicles-nav">
-                                        <a class="nav-link" data-toggle="pill" href="#performance-vehicles">Performnace Vehicles</a>
+                                        <a class="nav-link" data-toggle="pill" href="#performance-vehicles">Performnace
+                                            Vehicles</a>
                                     </li>
                                     <li class="nav-item vehicles-nav">
-                                        <a class="nav-link" data-toggle="pill" href="#future-vehicles">Future Vehicles</a>
+                                        <a class="nav-link" data-toggle="pill" href="#future-vehicles">Future
+                                            Vehicles</a>
                                     </li>
                                 </ul>
 
                                 <!-- Tab panes -->
                                 <div class="tab-content ">
-                                    <div id="cars" class="tab__container tab-pane active "><br>
-                                        <h3>HOME</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    </div>
+                                    <!-- Edit in  Header__LIST scss -->
+                                    <ul id="cars" class="vehicle-list nav tab__container tab-pane active" ><br>
+                                        <li class="nav-item vehicle-list__item">
+                                            <a href="https://www.ford.com/cars/fiesta/2019/?gnav=header-all-vehicles" class="nav-link" style="
+                                            padding-top: 25px;">
+                                                
+                                                    <div class="vehicle-list__item-image">
+                                                        <img src="./img/cars 1.png" alt="">
+                                                    </div>
+                                                    <div class="vehicle-list__item-brand">
+                                                        <span> 2019 FIESTA </span>
+                                                    </div>
+                                                    <div class="vehicle-list__item-price">
+                                                        <span>Starting at</span>
+                                                        <span>$14,260</span>
+                                                    </div>
+                                                
+                                                
+                                            </a>
+                                        </li>
+                                        <li class="nav-item vehicle-list__item">
+                                            <a href="https://www.ford.com/cars/fiesta/2019/?gnav=header-all-vehicles" class="nav-link" style="
+                                            padding-top: 25px;">
+                                                <div class="">
+                                                    <div class="vehicle-list__item-image">
+                                                        <img src="./img/cars 2.png" alt="">
+                                                    </div>
+                                                    <div class="vehicle-list__item-brand">
+                                                        <span> 2019 FUSION </span>
+                                                    </div>
+                                                    <div class="vehicle-list__item-price">
+                                                        <span>Starting at</span>
+                                                        <span>$22,840</span>
+                                                    </div>
+                                                </div>
+                                                
+                                            </a>
+                                        </li>
+                                        <li class="nav-item vehicle-list__item">
+                                            <a href="https://www.ford.com/cars/fiesta/2019/?gnav=header-all-vehicles" class="nav-link" style="
+                                            padding-top: 25px;">
+                                                <div class="">
+                                                    <div class="vehicle-list__item-image">
+                                                        <img src="./img/cars 3.png" alt="">
+                                                    </div>
+                                                    <div class="vehicle-list__item-brand">
+                                                        <span> 2019 MUSTANG </span>
+                                                    </div>
+                                                    <div class="vehicle-list__item-price">
+                                                        <span>Starting at</span>
+                                                        <span>$26,395</span>
+                                                    </div>
+                                                </div>
+                                                
+                                            </a>
+                                        </li>
+                                        <li class="nav-item vehicle-list__item">
+                                            <a href="https://www.ford.com/cars/fiesta/2019/?gnav=header-all-vehicles" class="nav-link" style="
+                                            padding-top: 25px;">
+                                                <div class="">
+                                                    <div class="vehicle-list__item-image">
+                                                        <img src="./img/cars 4.png" alt="">
+                                                    </div>
+                                                    <div class="vehicle-list__item-brand">
+                                                        <span> 2019 TAURUS </span>
+                                                    </div>
+                                                    <div class="vehicle-list__item-price">
+                                                        <span>Starting at</span>
+                                                        <span>$27,800</span>
+                                                    </div>
+                                                </div>
+                                                
+                                            </a>
+                                        </li>
+                                        <div class="vehicle-list__container w-100">
+                                            <div class="inner-container" >
+                                                <div class="container__link">
+                                                    <a href="">Certified Pre-Owned</a>
+                                                </div>
+                                                <div class="container__link">
+                                                    <a href="">Explore All Vehicles</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ul>
                                     <div id="suvs-crossovers" class="tab__container tab-pane fade"><br>
                                         <h3>Menu 1</h3>
                                         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -229,12 +313,12 @@
             </div>
         </section>
 
-        
+
     </div>
 
     <!-- ***Overlay open menu*** -->
     <div id="overlay" style="display:none"></div>
- 
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

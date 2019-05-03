@@ -74,8 +74,26 @@
       // Vehicles-dropdown
       #vehicles-dropdown {
         border: unset;
+        border-radius: 0;
         padding-top: 0;
-        
+       
+        -webkit-transition: all .4s cubic-bezier(0.7,0,0.3,1);
+        -moz-transition: all .4s cubic-bezier(0.7,0,0.3,1);
+        -ms-transition: all .4s cubic-bezier(0.7,0,0.3,1);
+        -o-transition: all .4s cubic-bezier(0.7,0,0.3,1);
+        transition: all .4s cubic-bezier(0.7,0,0.3,1);
+      
+        max-height: 0;
+        display: block;
+        overflow: hidden;
+        opacity: 0;
+      
+      
+      &.show {
+          max-height: 1000px;
+          opacity: 1;
+      }
+      
         ul.nav-pills {
          
           justify-content: center;
